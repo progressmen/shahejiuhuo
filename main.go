@@ -12,6 +12,16 @@ func main() {
             "message": "pong",
         })
     })
-    router.POST("/shjh/getList", handle.GetList)
+
+    // 获取分类
+    router.POST("/shjh/getItemList", handle.GetItemList)
+
+    // 获取图片
+    router.POST("/shjh/getPicList", handle.GetPicList)
+
+    // 初始化数据库
+    handle.InitDb()
+
+    // 启动服务
     router.Run(":8877") // listen and serve on 0.0.0.0:8080
 }
