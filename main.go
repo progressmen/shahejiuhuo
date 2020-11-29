@@ -12,6 +12,6 @@ func main() {
             "message": "pong",
         })
     })
-    router.POST("/getList", handle.GetList)
+    router.POST("/shjh/getList", handle.GetList)
     router.Run(":8877") // listen and serve on 0.0.0.0:8080
 }

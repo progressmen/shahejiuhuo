@@ -1,14 +1,14 @@
 package handle
 
 import (
-	"fmt"
 	"github.com/gin-gonic/gin"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 	"shahejiuhuo/libary/e"
 )
 
-const dsn = "work:npWS1Iu5MCmYmG9U@tcp(104.160.43.85:3306)/shahejiuhuo?charset=utf8mb4&parseTime=True&loc=Local"
+//const dsn = "work:npWS1Iu5MCmYmG9U@tcp(104.160.43.85:3306)/shahejiuhuo?charset=utf8mb4&parseTime=True&loc=Local"
+const dsn = "work:npWS1Iu5MCmYmG9U@tcp(127.0.0.1:3306)/shahejiuhuo?charset=utf8mb4&parseTime=True&loc=Local"
 
 type Item struct {
 	Id       int

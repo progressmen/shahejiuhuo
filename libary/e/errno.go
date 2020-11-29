@@ -16,7 +16,6 @@ func (f *Err) MakeErr(errno int) Err {
 }
 
 const (
-	//sys common 900xxx
 	SUCCESS       = 1
 	FAILD         = 2
 	InvalidParams = 101
